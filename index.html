@@ -64,11 +64,13 @@ body{
 	
 }
 
-.info >div:hover{
-	padding-top: 2rem;
-		background:rgba(255,255,255,1);
-		font-size: 0.7rem;
+
+.hov{
+		padding-top: 2rem!important;
+		background:rgba(255,255,255,1)!important;
+		font-size: 0.7rem!important;
 }
+
 
 a:hover
 {
@@ -156,7 +158,7 @@ a:hover
      	showLess(document.getElementById("b2"),2);
      	showLess(document.getElementById("b3"),3);
      	showLess(document.getElementById("b4"),4);
-
+		b.setAttribute("class",b.getAttribute("class")+" hov");
 
      	switch(num){
      	case 1: b.innerHTML = '<p>Projects I have created</p><a href="http://www.cafetapatio.com" target="_blank">Cafe El Tapatio</a>\
@@ -178,7 +180,8 @@ a:hover
 	   }
      }
      function showLess(b,num){
-     	
+		b.setAttribute("class",b.getAttribute("class").replace(" hov",""));
+
      	switch(num){
      	case 1: b.innerHTML = '<span>Personal projects</span>'; break;
 		case 2: b.innerHTML = '<span>Repositorio</span>'; break;
