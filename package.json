@@ -1,0 +1,29 @@
+{
+  "name": "manelawebve",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianelamin/manelawebve.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Marianela Crissman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianelamin/manelawebve/issues"
+  },
+  "homepage": "https://github.com/marianelamin/manelawebve#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
