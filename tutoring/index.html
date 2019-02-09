@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+        
+        <title>Marianela Tutoring</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+<style>
+html {
+   
+    background: linear-gradient(to left, gray,black);
+    
+}
+body{
+    box-sizing: border-box;
+	background: radial-gradient(orange,brown);
+    background-size: cover;
+    border: 3px solid;*/
+} 
+.header-1{
+	min-height: 5rem;
+	color: white;
+	font-size: 1.5rem;
+	/* display: flex; */
+    /* flex-wrap: nowrap; */
+}
+.header-1 img{
+    height: 6vh;
+    padding-left: 4%;
+}
+.header-1 div{
+	display: flex;
+	min-height: 3rem;
+	align-items: center;
+}
+
+
+.info >div {
+	/* background: blue; */
+    box-sizing: border-box;
+    /* font-size: 1.4rem; */
+    /* margin: 1rem; */
+    text-align: center;
+	}
+
+
+.hov{
+		padding-top: 2rem!important;
+		padding-bottom: 1rem!important;
+		background:rgba(255,255,255,1)!important;
+		font-size: 0.7rem!important;
+		border: 1px solid #2f6398;
+}
+
+
+a:hover
+{
+	color: green;
+	text-decoration: none;
+}
+.footer-1{
+	/*background-color: white;*/
+	min-height: 1rem;
+}
+.copyrights{
+    /*content: "Designed and developed by Marianela Crissman";*/
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: #fdb813;
+    background-color: #0a0e13;
+    font-variant-caps: small-caps;
+    text-align: center;
+    font-size: 0.8em;
+    /*height: 20vh;*/
+    margin-bottom:1rem;
+}
+
+@media only screen and (min-width: 900px)
+{
+	/* #b1,#b2,#b3,#b4{
+		width: 100%;
+	} */
+	
+    .info >div ,.header-1{
+        /* background: yellow; */
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+</style>
+	
+</head>
+
+<body>
+
+<header class="container ">
+	<div class="header-1 row">
+        <div class="col-4"><a href="../index.html"> &larr;Back</a></div>
+        <div class="col-8"><h1>Private Tutoring</h1></div>
+	</div>
+</header>
+<main>
+	<div class="container">
+	  <div class="row info justify-content-around" align="center">
+		<div id="b4"><img class="img-fluid" src="green-fliyer_math_cs_stand.png" alt="tutoring"></div>
+      </div>		
+	</div>
+</main>
+<!-- <footer class="footer-1">
+
+</footer> -->
+<div class="copyrights">
+             <div class="container">
+            <div class="row align-items-strech ">
+              <div class="col-6 text-center">
+                <span>Designed and developed by Marianela Crissman</span></div>
+              <div class="col-6 text-center">
+                <span>Copyrights 2018</span></div>
+            </div>
+          </div>
+  
+</div>
+   
+   <script type="text/javascript">
+   	
+     function showMore(b,num)
+     {
+     	showLess(document.getElementById("b1"),1);
+     	showLess(document.getElementById("b2"),2);
+     	showLess(document.getElementById("b3"),3);
+     	showLess(document.getElementById("b4"),4);
+		b.setAttribute("class",b.getAttribute("class")+" hov");
+
+     	switch(num){
+     	case 1: b.innerHTML = '<p>Projects I created on my free time for fun or learning purposes</p>\
+     	                        <a href="bolivar/" target="_blank">Venezuelan Currency Conversion (Bs - BsF - BsS)</a><span> | </span>\
+     							<a href="calculo/" target="_blank">Desired Pay Calculator</a><span> | </span>\
+     							<a href="rubix/" target="_blank">Rubix Move Visualization</a><span> | </span>\
+     							<a href="asg6/" target="_blank">Guessing Game</a><span> | </span>\
+     							<a href="asg7" target="_blank">Simple MD5 Cracker</a><span> | </span>\
+     							<a href="asg8" target="_blank">Paper Rock Sicssors</a><span> | </span>\
+     							<a >RicoRobot (for a youtube class)</a><span> | </span>\
+     							<a >in-house RC car</a><span> | </span>\
+     							<a href="todolist/" target="_blank">TodoList (Angular)</a>\
+     							'; break;
+		case 2: b.innerHTML = '<p>These were developed for bussinesses, non-profit organizations or departments of Northeastern Illinois University (NEIU)</p>\
+		                        <a href="http://www.cafetapatio.com" target="_blank">Cafe El Tapatio</a><span> | </span>\
+     							<a href="http://www.chessanimals.com" target="_blank">Chess Animals</a><span> | </span>\
+     							<a href="http://www.hsi-midwest.org" target="_blank">Conference@NEIU May 2018</a><span> | </span>\
+     							<a href="https://cahsi-midwest.org/" target="_blank">NEIU Security Group</a><span> | </span>\
+     							<a href="https://cahsi-midwest.org/scholarships" target="_blank">NEIU Scholarship Search</a><span> | </span>\
+     							<a href="https://pda.org.ve/" target="_blank">Proyecto de Amor</a>\
+								'; break;
+		case 3: b.innerHTML = '<p>I help students with important topics... a \'lil bit of everything</p>\
+		                        <a >Basics of Programming (Java)</a><span> | </span>\
+                        		<a >Discrete Mathematics</a><span> | </span>\
+		                        <a >Debuging code (.py/.java/.html/.css)</a><span> | </span>\
+		                        <a >Object-Oriented Design</a><span> | </span>\
+		                        <a >Data Structures</a><span> | </span>\
+								<a href="problem-solving">Approaches to Problem Solving</a><span> | </span>\
+								<a href="jobseeking/">When looking for a job</a><span> | </span>\
+								<a href="learning/">Learning Strategies</a><span> | </span>\
+								<a href="tutoring/">Private Tutoring</a>\
+								'; break;
+		case 4: b.innerHTML = '<a href="https://bitbucket.org/marianela_min/" target="_blank">bitbucket</a><span> | </span>\
+								<a href="https://github.com/marianelamin/" target="_blank">gitHub</a><br\>\
+                        		<a href="https://www.linkedin.com/in/marianela3101" target="_blank">LinkedIn</a>';
+	   }
+     }
+     function showLess(b,num){
+		b.setAttribute("class",b.getAttribute("class").replace(" hov",""));
+
+     	switch(num){
+     	case 1: b.innerHTML = '<span>Personal Projects</span>'; break;
+		case 2: b.innerHTML = '<span>Work Projects</span>'; break;
+		case 3: b.innerHTML = '<span>CS Tutor & Education</span>'; break;
+		case 4: b.innerHTML = '<span>Repo & LinkedIn</span></div>';
+	   }
+     }
+   </script>
+
+   
+   <!-- Do not touch leave this at the very end of the code, right before closing body tag -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>
