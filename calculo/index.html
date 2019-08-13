@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Horas de Trabajo - calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+
+body
+{
+  margin: 3%;
+}
+   span{
+    /* color: #700070; */
+    font-style: italic;
+  }
+  #hrP ,#taxP,#hours_W,#goal_W,#days_W
+  {
+    color:#700070;
+    font-weight: bold;
+  }
+  .red , .green{
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 50%;
+    text-align: center;
+    line-height: 3em;
+  }
+
+  .red{
+    background-color: #ffcfcf;
+    color:red;
+  }
+  #id_answer{
+    background-color: #71ad71;
+    color: white;
+  }
+
+  </style>
+</head>
+
+
+<body>
+
+<a href="/"> &larr; Back</a>
+
+
+<h1> Bienvenidos a mi calculadora de horas</h1>
+<p>Esta pagina se hizo con la intencion de que puedan organizarse mejor con las horas de trabajo, para que asi puedan hacer mucho dinero sin descuidar el tiempo en familia.</p>
+<p>Mas adelante agregare una donde puedan colocar sus ingresos y egresos, para luego ver proyecciones y mostrarles graficos que muestren lo que pueden llegar a ahorrar en un año.</p>
+<div class="container-fluid">
+  <div class="row">
+    <h2> Calcular cuanto tiempo tengo que trabajar para hacer dinero:</h2>
+    <p>Las variables de entrada son un estimado de impuestos, el pago por ahora y la meta semanal.</p>
+    <div class="col-sm-6">
+      <p class="row"> <label class="col-sm-9 col-md-6">Meta semanal [$]: </label><input class="col-sm-3 col-md-5" id="goal" oninput="update()" type="number" value="250" min=150 max=500 /></p>
+      <p class="row"> <label class="col-sm-9 col-md-6">Pago por hora [$]:</label> <input class="col-sm-3 col-md-5" id="hr" oninput="update()" type="number" value="10" min=8 max=30 /></p>
+      <p class="row"> <label class="col-sm-9 col-md-6">Impuesto estimado [%]:</label> <input class="col-sm-3 col-md-5" id="tax" oninput="update()" type="number" value="25" min=10 max=30/></p>
+    </div>
+    <div class="col-sm-6" id="id_answer">
+      <p>Ganando por hora: <span id="hrP">___</span><br>
+      Pagando impuesto: <span id="taxP">___</span><br>
+      Meta semanal: <span id="goal_W">___</span></p>
+      <br>
+      <p class="text-center">
+        A la semana necesitas trabajar:
+        <span id="days_W">___</span> <br> (o sea <span id="hours_W">___</span> )
+        (asumiento 8 horas en un dia).
+      </p>
+    </div>
+    <ul class="col-12">
+      <li><a href="index.html">Resetear esta pagina</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h2 class="col-12">Referencia</h2>
+      <p classs="col-sm-7">Esta es una tabla que pueden usar de referencia para sus calculos.</p>
+        <div>
+          <img width=100% src="referencia.jpeg" alt="referencia de entradas"/>
+        </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+        <hr class="clearfix w-100 d-md-none pb-3">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https:manela.web.ve" target="_blank"> manela.web.ve</a>
+      <br>
+      <span>Si tienes comentarios o sugerencias para mi relacionadas con esta pagina web, porfavor contactame a <a href="mailto:info@manela.web.ve" target="_blank">esta direccion</a></span>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+<script>
+
+const elem_hrP = document.getElementById('hrP');
+const elem_taxP = document.getElementById('taxP');
+const elem_hours_W = document.getElementById('hours_W');
+const elem_goal_W = document.getElementById('goal_W');
+const elem_days_W = document.getElementById('days_W');
+
+const elem_goal = document.getElementById('goal');
+const elem_tax = document.getElementById('tax');
+const elem_hr = document.getElementById('hr');
+
+function update() {
+
+  let money_week = elem_goal.value;
+  let taxRate = elem_tax.value;
+  let hourlyRatePaper = elem_hr.value;
+  let h_week = Math.round(money_week/( hourlyRatePaper*(1-taxRate/100)  )*10)/10;
+
+  elem_hrP.innerHTML = '$' + hourlyRatePaper;
+  elem_taxP.innerHTML = taxRate + '%';
+  elem_hours_W.innerHTML = h_week + ' horas';
+  elem_goal_W.innerHTML = '$'+money_week;
+  elem_days_W.innerHTML = Math.ceil(h_week/8) + ' dias';
+
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,32 +1,19 @@
-/*html {margin: 2%;
-    background: linear-gradient(#534780,#9e9e9e);
-}*/
+* {
+    box-sizing: border-box;
+}
 
 body{
-    box-sizing: border-box;
-	/*background: url(leave.jpg);*/
-    /*background-size: cover;*/
-    /*border: 3px solid;*/
     margin: 0;
     color:#444;
 }
 header{
-    background-color: #502297;
+    background-color: #5d26b1;
     color: white;
 }
 
 
-a{
-    /*padding: 0 2rem;*/
-    color: #fdb813;
-}
-a:hover{
-    color: #986b00;
-    text-decoration: none;
-}
-
 .header-1{
-	display: flex;
+    display: flex;
     flex-wrap: nowrap;
 }
 .header-img-container{
@@ -50,14 +37,18 @@ a:hover{
 .spacer{
     flex: 1 1 100%;
 }
-/*.header-1 img{
-    height: 2rem;
-    padding: 3rem;
-}*/
-.header-1 div{
-	/*min-height: 2rem;*/
-    padding-left:0;
 
+.header-1 div{
+    padding-left:0;
+    
+}
+
+a{
+    color: #fdb813;
+}
+a:hover{
+    color: #986b00;
+    text-decoration: none;
 }
 
 .naveg-bar{
@@ -72,21 +63,12 @@ a:hover{
     color:#bd78c4;
 }
 
-
-/* .info >div { */
 .info-div{
 	box-sizing: border-box;
     padding-top:2.5rem;
-    /*min-height: 10rem;*/
-    
-    /*border: 0px solid #2f6398;*/
-    /*border-radius: 5px;*/
-    /*font-size: 1.4rem;*/
     background: rgba(255,255,255,0.75);
     border-bottom: 1px dotted purple;
-    /*color: purple;*/
-    /*margin: 1rem;*/
-    /*text-align: center;*/	
+
 }
 .info h2{
     border-bottom: 4px solid #5d26b1;
@@ -97,28 +79,15 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.list-projects>li{
-    padding-bottom: 10px;
-}
 
-
-.hov{
-		padding-top: 2rem!important;
-		padding-bottom: 1rem!important;
-		background:rgba(255,255,255,1)!important;
-		font-size: 0.7rem!important;
-		border: 1px solid #2f6398;
-}
 .footer-1{
-	/*background-color: white;*/
 	min-height: 2rem;
 }
 .hr-divider{
     border-top: 1px dotted #fdb813;
- width: 90%;
+    width: 90%;
 }
 .copyrights{
-    /*content: "Designed and developed by Marianela Crissman";*/
     padding-top: 2%;
     padding-bottom: 1%;
     color: #fdb813;
@@ -126,7 +95,6 @@ a:hover{
     font-variant-caps: small-caps;
     text-align: center;
     font-size: 0.8em;
-    /*height: 20vh;*/
     padding-bottom:1rem;
 }
 .copyrights-icons{
@@ -139,6 +107,11 @@ a:hover{
 .copyrights-icons>a:hover{
     color: #fff;
 }
+.parent-btn-to-grow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .btn-to-grow{
     box-sizing: border-box;
     border: 1px dotted orange;
@@ -147,38 +120,60 @@ a:hover{
     padding:10px;
     margin: 10px;
 }
-.parent-btn-to-grow{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .btn-black{
-    color: #000;
+    color: #5d26b1;
     background-color: #efefef;
     padding: 2% 3%;
 }
 .tech-used{
-    border-bottom: 1px dotted orange;
     border-radius: 5px;
     padding: 2% 3%;
+    background: #bebebe;
+    font-size: 0.6rem;
+    color: white;
+    margin: 2px;
 }
 .my-card{
-    width: 100%; padding: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
 }
 
+.my-card-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+#sb-1{
+    background: url(images/inTheClassroom.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-2{
+    background: url(images/planning.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-3{
+    background: url(images/coderunnerTeam.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-4{
+    background: url(images/bombyLoco.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
 .section-breaker{
-    display:block;
     min-height: 50vh;
-    background-color: #5d26b1;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
-
 @media only screen and (min-width: 600px)
 {
-    /* this will be for a bigger screen */
-	#b1,#b2,#b3,#b4{
-		width: 70%;
-	}
-    /* .info >div { */
+
     .info-div{
 	    padding-top: 1.5rem;
         min-height: 5rem;
@@ -191,11 +186,7 @@ a:hover{
         font-size: 1rem;
     }
     .my-card{
-        width: 50%;
+        width: 47%;
     }
-    .section-breaker{
-        display:block;
-        min-height: 50vh;
-        background-color: #5d26b1;
-    }
+
 }
