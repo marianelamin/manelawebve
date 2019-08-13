@@ -23,6 +23,13 @@
             description:'Within the last 20 years, Venezuela has had 3 changes of currency.  Always eliminating certain amount of zeros.  I created this simple web app in order to help those that have a hard time converting their money.'
          },
          {
+            title:'The Puzzle Game',
+            link:'puzzle/index.htm',
+            onlineRepo: '',
+            techUsed: ['JS'],
+            description:'Following Youtube tutorials, I was able to create my own Puzzle Game.  Visit the site to win the challenge.'
+         },
+         {
             title:'Remote Control Car',
             link:'',
             onlineRepo: '',
@@ -43,7 +50,7 @@
          {
             title: 'Simple MD5 Cracker',
             year: '2017',
-            link:'asg7/',
+            link:'coursera/asg7/',
             onlineRepo: '',
             techUsed: ['PHP'],
             description:'Using PHP built-in functions we implemented a hash cracker.'
@@ -51,7 +58,7 @@
          {
             title: 'Paper Rock Sicssors',
             year: '2017',
-            link:'asg8/',
+            link:'coursera/asg8/',
             onlineRepo: '',
             techUsed: ['PHP'],
             description:'A game using basics of PHP.'
