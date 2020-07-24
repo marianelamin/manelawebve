@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color:#444;
+}
+header{
+    background-color: #5d26b1;
+    color: white;
+}
+
+
+.header-1{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header-img-container{
+    /*width: 70%;*/
+}
+.header-title-container{
+    /*text-align: center;*/
+}
+.header-title-container>h1{
+    font-size: 1.15rem;
+    font-family: 'Purisa', 'Heveltica', 'san-serif';
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+.header-title-container>h2{
+    font-size:0.6rem;
+    font-style: italic;
+    text-align: right;
+}
+.spacer{
+    flex: 1 1 100%;
+}
+
+.header-1 div{
+    padding-left:0;
+    
+}
+
+a{
+    color: #fdb813;
+}
+a:hover{
+    color: #986b00;
+    text-decoration: none;
+}
+
+.naveg-bar{
+	background: #f1eaff;
+	padding: 10px 0;
+	color: #786993;
+}
+.naveg-bar a{
+    color:purple;
+}
+.naveg-bar a:hover{
+    color:#bd78c4;
+}
+
+.info-div{
+	box-sizing: border-box;
+    padding-top:2.5rem;
+    background: rgba(255,255,255,0.75);
+    border-bottom: 1px dotted purple;
+
+}
+.info h2{
+    border-bottom: 4px solid #5d26b1;
+}
+.list-projects{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-1{
+	min-height: 2rem;
+}
+.hr-divider{
+    border-top: 1px dotted #fdb813;
+    width: 90%;
+}
+.copyrights{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: #fdb813;
+    background-color: #0a0e13;
+    font-variant-caps: small-caps;
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom:1rem;
+}
+.copyrights-icons{
+    font-size: 2rem;
+}
+.copyrights-icons>a{
+    padding: 0 2rem;
+    color: #fdb813;
+}
+.copyrights-icons>a:hover{
+    color: #fff;
+}
+.parent-btn-to-grow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-to-grow{
+    box-sizing: border-box;
+    border: 1px dotted orange;
+    background-color: #fdfaf5; 
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+}
+
+.btn-black{
+    color: #5d26b1;
+    background-color: #efefef;
+    padding: 2% 3%;
+}
+.tech-used{
+    border-radius: 5px;
+    padding: 2% 3%;
+    background: #bebebe;
+    font-size: 0.6rem;
+    color: white;
+    margin: 2px;
+}
+.my-card{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.my-card-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+#sb-1{
+    background: url(images/inTheClassroom.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-2{
+    background: url(images/planning.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-3{
+    background: url(images/coderunnerTeam.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#sb-4{
+    background: url(images/bombyLoco.jpg), rgb(241, 234, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.section-breaker{
+    min-height: 50vh;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+@media only screen and (min-width: 600px)
+{
+
+    .info-div{
+	    padding-top: 1.5rem;
+        min-height: 5rem;
+        padding-bottom: 1.5rem;
+    }
+    .header-title-container>h1{
+        font-size: 1.5rem;
+    }
+    .header-title-container>h2{
+        font-size: 1rem;
+    }
+    .my-card{
+        width: 47%;
+    }
+
+}

@@ -1,0 +1,15 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.winner{
+	color:green;
+	font-size:2em;
+}
+
+.loser{color:red;font-size:2em;}
+.tie{color:#ffd600;font-size:2em;}

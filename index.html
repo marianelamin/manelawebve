@@ -1,219 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-        
-        <title>Marianela's site</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        
-<style>
-html {margin: 2%;
-    background: linear-gradient(#534780,#9e9e9e);
-
-}
-body{
-    box-sizing: border-box;
-	background: url(leave.jpg);
-    background-size: cover;
-    border: 3px solid;
-}
-.header-1{
-	min-height: 5rem;
-	background-color: white;
-	color: purple;
-	font-size: 1.5rem;
-	display: flex;
-    flex-wrap: nowrap;
-}
-.header-1 img{
-    height: 6vh;
-    padding-left: 4%;
-}
-.header-1 div{
-	display: flex;
-	min-height: 3rem;
-	align-items: center;
-}
-
-.naveg-bar{
-	background: white;
-	min-height: 2rem;
-	color: #786993;
-}
-
-
-.info >div {
-	padding-top: 2.5rem;
-    min-height: 10rem;
-    box-sizing: border-box;
-    /*border: 0px solid #2f6398;*/
-    border-radius: 5px;
-    font-size: 1.4rem;
-    background: rgba(255,255,255,0.75);
-    color: purple;
-    margin: 1rem;
-    text-align: center;
-	
-}
-
-
-.hov{
-		padding-top: 2rem!important;
-		padding-bottom: 1rem!important;
-		background:rgba(255,255,255,1)!important;
-		font-size: 0.7rem!important;
-		border: 1px solid #2f6398;
-}
-
-
-a:hover
-{
-	color: green;
-	text-decoration: none;
-}
-.footer-1{
-	/*background-color: white;*/
-	min-height: 1rem;
-}
-.copyrights{
-    /*content: "Designed and developed by Marianela Crissman";*/
-    padding-top: 2%;
-    padding-bottom: 1%;
-    color: #fdb813;
-    background-color: #0a0e13;
-    font-variant-caps: small-caps;
-    text-align: center;
-    font-size: 0.8em;
-    /*height: 20vh;*/
-    margin-bottom:1rem;
-}
-
-@media only screen and (max-width: 600px)
-{
-	#b1,#b2,#b3,#b4{
-		width: 70%;
-	}
-	
-    .info >div {
-	    padding-top: 1.5rem;
-        min-height: 5rem;
-        padding-bottom: 1.5rem;
-    }
-}
-
-
-</style>
-	
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb18030"> 
+    <title>Marianela's site</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />	
 </head>
-
 <body>
 
-<header class="container-fluid ">
-	<div class="header-1 row">
-		<div class="col-4"><img src="creacion.png" alt="creacion de colores"></div>
-		<div class="col-8"><h1>El Rincon de Min</h1></div>
-	</div>
-</header>
-<nav class="nav-text naveg-bar">
-		<ul class="nav justify-content-around">
-			<li>Talking about life</li>
-			<li hidden>Teaching assistant/Tutor</li>
-			<li hidden>Personal projects</li>
-			<li><a href="mailto:m-mendozamendoza@neiu.edu" >Contact</a></li>
-			<li><a href="resume/Resume_Marianela_Crissman_Feb(2019).pdf">Resume</a></li>
-		</ul>
-</nav>
-<main>
-	<section>
-	<div class="container">
-	  <div class="row info justify-content-around">
-		<div id="b1" class="col-md-5" onclick="showMore(this,1)" onmouseenter="showMore(this,1)" onmouseleave="showLess(this,1)"><span>Personal Projects</span></div>
-		<div id="b2" class="col-md-5" onclick="showMore(this,2)" onmouseenter="showMore(this,2)" onmouseleave="showLess(this,2)"><span>Work Projects</span></div>
-		<div id="b3" class="col-md-5" onclick="showMore(this,3)" onmouseenter="showMore(this,3)" onmouseleave="showLess(this,3)"><span>CS Tutor & Education</span></div>
-		<div id="b4" class="col-md-5" onclick="showMore(this,4)" onmouseenter="showMore(this,4)" onmouseleave="showLess(this,4)"><span>Repo & LinkedIn</span></div>
-	</div>		
-	</div>
-
-    </section>
-</main>
-<footer class="footer-1">
-
-</footer>
-<div class="copyrights">
-             <div class="container">
-            <div class="row align-items-strech ">
-              <div class="col-6 text-center">
-                <span>Designed and developed by Marianela Crissman</span></div>
-              <div class="col-6 text-center">
-                <span>Copyrights 2018</span></div>
+    <header class="container-fluid">
+        <div class="header-1 row align-items-center">
+            <div class="col-3 col-md-2 header-img-container">
+                <img class="img-fluid" src="creacion.png" alt="creacion de colores" />
             </div>
-          </div>
-  
-</div>
+            <!-- <span class="col-auto col-md-3"></span> -->
+            <div class="col-9 col-md-9 header-title-container">
+                <h1>Marianela's Place</h1>
+                <h2>El Rincon de Min</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="naveg-bar">
+        <ul class="nav justify-content-around">
+            <li><a href="#b3">Teaching</a></li>
+            <li><a href="#b1">Projects</a></li>
+            <li><a href="resume/Resume_Marianela_Crissman_Jun(2019).pdf" target="_blank">Resume</a></li>
+            <li><a href="mailto:m-mendozamendoza@neiu.edu">Contact</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row info justify-content-around">
+                    <div id="b3" class="col-12 col-md-12 col-lg-9 info-div">
+                            <h2>CS Tutor & Education</h2>
+                            <p>I help students with important topics... a little bit of everything. Want to know more about <a href="tutoring/">Private Tutoring</a>?</p>
+                            <ul>
+                                <li>Basics of Programming concepts [Javascript, Java, Python]</li>
+                                <li>Front end Web Technologies [HTML, CSS, Bootstrap]</li>
+                                <li>Debuging code techniques</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Object-Oriented Design</li>
+                                <li>Algebra & Calculus</li>
+                            </ul>
+                            <div class="parent-btn-to-grow">
+                                <p style="flex: 0 0 100%;">Some useful things I found when learning.. you might want to check this out:</p>
+                                <a class="btn-to-grow" href="troubleshoot-strat/index.html"><span>How to Troubleshoot?</span></a>
+                                <a class="btn-to-grow" href="problem-solving/index.html"><span>How to approach solving a problem?</span></a>
+                                <a class="btn-to-grow" href="jobseeking/index.html"><span>How to get ready for the tech industry?</span></a>
+                                <a class="btn-to-grow" href="learning/index.html"><span>How do humans learn?</span></a>
+                            </div>
+                            <div class="parent-btn-to-grow">
+                                    <p style="flex: 0 0 100%;">Useful links at NEIU - Fall 2019</p>
+                                <a class="btn-to-grow" href="https://cahsi-midwest.org/workshops/" target="_blank"><span>CS Workshops@NEIU?</span></a>
+                                <a class="btn-to-grow" href="http://neiu.acm.org/" target="_blank"><span>Computer Science Society (ACM Chapter)</span></a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-12 section-breaker" id="sb-1">
+                        <!-- <img src="electronics.jpg" class="img-fluid"> -->
+                    </div>
+                    <div id="b1" class="col-12 col-md-12 col-lg-9 info-div">
+                            <h2>Personal Projects</h2>
+                            <p>Projects I created on my free time for fun or learning purposes</p>
+                            <ul id="b1-a" class="list-projects">
+
+                            </ul>
+                    </div>
+                    <div class="col-12 section-breaker" id="sb-2"></div>
+                    <div class="col-12 col-md-12 col-lg-9 info-div">
+                            <h2>Class Projects</h2>
+                            <h3>NEIU classes</h3>
+                            <ul id="b1-c" class="list-projects">
+                            
+                            </ul>
+                    </div>
+                    <div class="col-12 section-breaker" id="sb-3"></div>
+                    <div class="col-12 col-md-12 col-lg-9 info-div">
+                            <h3>Coursera classes</h3>
+                            <ul id="b1-b" class="list-projects">
+                            
+                            </ul>
+                    </div>
+                    <div class="col-12 section-breaker" id="sb-4"></div>
+                    <div class="col-12 col-md-12 col-lg-9 info-div">
+                            <h2>Work Projects</h2>
+                            <p>These were developed for bussinesses, non-profit organizations or school departments
+                                <ul id="b2-a" class="list-projects">
+
+                                </ul>
+                            </p>
+                    </div>
+                </div>		
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-1">
+        <div class="container py-3">
+            <div class="row">
+                <p class="col-12 text-center">If you have any questions, comments or suggestions, see <a href="resume/Resume_Marianela_Crissman_Jun(2019).pdf" target="_blank">my contact information</a></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+
+            <hr class="hr-divider" />    
+            <div class="container">
+                <div class="row justify-content-center copyrights-icons">
+                    <a href="https://github.com/marianelamin" target="_blank"><span><i class="fab fa-github"></i></span></a>
+                    <a href="https://bitbucket.org/marianela_min/" target="_blank"><span><i class="fab fa-bitbucket"></i></span></a>
+                    <a href="https://www.linkedin.com/in/marianela3101" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+                </div>
+            </div>
+            <hr class="hr-divider" />
+            <div class="container">
+                <div class="row align-items-strech ">
+                <div class="col-6 text-center">
+                    <span>Designed and developed by Marianela Crissman</span></div>
+                <div class="col-6 text-center">
+                    <span>Copyrights 2018</span></div>
+                </div>
+            </div>
+    </div>
    
-   <script type="text/javascript">
-   	
-     function showMore(b,num)
-     {
-     	showLess(document.getElementById("b1"),1);
-     	showLess(document.getElementById("b2"),2);
-     	showLess(document.getElementById("b3"),3);
-     	showLess(document.getElementById("b4"),4);
-		b.setAttribute("class",b.getAttribute("class")+" hov");
-
-     	switch(num){
-     	case 1: b.innerHTML = '<p>Projects I created on my free time for fun or learning purposes</p>\
-     	                        <a href="bolivar/" target="_blank">Venezuelan Currency Conversion (Bs - BsF - BsS)</a><span> | </span>\
-     							<a href="calculo/" target="_blank">Desired Pay Calculator</a><span> | </span>\
-     							<a href="rubix/" target="_blank">Rubix Move Visualization</a><span> | </span>\
-     							<a href="asg6/" target="_blank">Guessing Game</a><span> | </span>\
-     							<a href="asg7" target="_blank">Simple MD5 Cracker</a><span> | </span>\
-     							<a href="asg8" target="_blank">Paper Rock Sicssors</a><span> | </span>\
-     							<a >RicoRobot (for a youtube class)</a><span> | </span>\
-     							<a >in-house RC car</a><span> | </span>\
-     							<a href="todolist/" target="_blank">TodoList (Angular)</a>\
-     							'; break;
-		case 2: b.innerHTML = '<p>These were developed for bussinesses, non-profit organizations or departments of Northeastern Illinois University (NEIU)</p>\
-		                        <a href="http://www.cafetapatio.com" target="_blank">Cafe El Tapatio</a><span> | </span>\
-     							<a href="http://www.chessanimals.com" target="_blank">Chess Animals</a><span> | </span>\
-     							<a href="http://www.hsi-midwest.org" target="_blank">Conference@NEIU May 2018</a><span> | </span>\
-     							<a href="https://cahsi-midwest.org/" target="_blank">NEIU Security Group</a><span> | </span>\
-     							<a href="https://cahsi-midwest.org/scholarships" target="_blank">NEIU Scholarship Search</a><span> | </span>\
-     							<a href="https://pda.org.ve/" target="_blank">Proyecto de Amor</a>\
-								'; break;
-		case 3: b.innerHTML = '<p>I help students with important topics... a \'lil bit of everything</p>\
-		                        <a >Basics of Programming (Java)</a><span> | </span>\
-                        		<a >Discrete Mathematics</a><span> | </span>\
-		                        <a >Debuging code (.py/.java/.html/.css)</a><span> | </span>\
-		                        <a >Object-Oriented Design</a><span> | </span>\
-		                        <a >Data Structures</a><span> | </span>\
-								<a href="problem-solving">Approaches to Problem Solving</a><span> | </span>\
-								<a href="jobseeking/">When looking for a job</a><span> | </span>\
-								<a href="learning/">Learning Strategies</a><span> | </span>\
-								<a href="tutoring/">Private Tutoring</a>\
-								'; break;
-		case 4: b.innerHTML = '<a href="https://bitbucket.org/marianela_min/" target="_blank">bitbucket</a><span> | </span>\
-								<a href="https://github.com/marianelamin/" target="_blank">gitHub</a><br\>\
-                        		<a href="https://www.linkedin.com/in/marianela3101" target="_blank">LinkedIn</a>';
-	   }
-     }
-     function showLess(b,num){
-		b.setAttribute("class",b.getAttribute("class").replace(" hov",""));
-
-     	switch(num){
-     	case 1: b.innerHTML = '<span>Personal Projects</span>'; break;
-		case 2: b.innerHTML = '<span>Work Projects</span>'; break;
-		case 3: b.innerHTML = '<span>CS Tutor & Education</span>'; break;
-		case 4: b.innerHTML = '<span>Repo & LinkedIn</span></div>';
-	   }
-     }
-   </script>
-
-   
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7bc0471218.js"></script>
    <!-- Do not touch leave this at the very end of the code, right before closing body tag -->
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>
