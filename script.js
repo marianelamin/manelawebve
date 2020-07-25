@@ -13,7 +13,7 @@ let personal_projects = [
       link: 'calculo/index.html',
       onlineRepo: 'https://bitbucket.org/marianela_min/calculo/src/master/',
       techUsed: ['HTML', 'CSS', 'JS'],
-      description: 'A tool that spanish-speakers can use in order to figure out how many hours they need to work to cover basic necessities.'
+      description: 'A tool that spanish-speakers can use in order to figure out how many hours they need to work to cover basic expenses.'
    },
    {
       title: 'Bolivar Conversion (Bs BsF BsS)',
