@@ -145,6 +145,10 @@ a:hover{
     justify-content: space-between;
 }
 
+.card-text-description{
+    color:gray;
+    font-size: 0.8rem;
+}
 
 #sb-1{
     background: url(images/inTheClassroom.jpg), rgb(241, 234, 255);

@@ -74,18 +74,18 @@
      ];
      let neiu_class_projects = [
          {
-            title: 'Bomby Car2',
-            class:'AI',
-            year: '2017',
+            title: 'Bomby Car 2',
+            class:'Robotics and AI',
+            year: 'Fall 2018',
             link:'',
             onlineRepo: 'https://github.com/marianelamin/bomby-car2',
-            techUsed: ['python','arduino'],
+            techUsed: ['python','arduino', 'V-rep'],
             description:'A python application that connects with the Arduino via sockets and request for distance sensor to modify belief using Bayes Filter Algorithm.'
          },
          {
             title: 'Scholarship Finder',
             class:'Design of Databases',
-            year: '2019',
+            year: 'Spring 2019',
             link:'http://cs.neiu.edu/~db_spr19_mmendozamend/scholarship-finder/login.php',
             onlineRepo: 'https://github.com/JohnCrissman/scholarship-finder/tree/development',
             techUsed: ['Bootstrap','PHP','MySQL'],
@@ -93,7 +93,7 @@
          },         {
             title: 'CRUD Appetizers',
             class:'Design of Databases',
-            year: '2019',
+            year: 'Spring 2019',
             link:'http://cs.neiu.edu/~db_spr19_mmendozamend/dbhomework/',
             onlineRepo: 'https://github.com/marianelamin/cs415-crud-appetizers',
             techUsed: ['Bootstrap','PHP','MySQL'],
@@ -102,7 +102,7 @@
          {
             title: 'FSharp',
             class: 'Software Engineering',
-            year: '2019',
+            year: 'Spring 2019',
             link: '',
             onlineRepo: 'https://github.com/db-mw-software/FSharp/',
             techUsed: ['Angular','nodejs','MySQL'],
@@ -111,11 +111,38 @@
          {
             title: 'Chec Crew',
             class: 'Web App Development',
-            year: '2019',
+            year: 'Summer 2019',
             link:'http://cs.neiu.edu/~db_spr19_mmendozamend/index.html',
             onlineRepo: 'https://github.com/marianelamin/chec-crew-green-fee-tac-app',
             techUsed: ['Angular','Google API', 'nodejs', 'MongoDB'],
             description:'A SPA that integrates login authentications, CRUD operations, uses a new javascript framework.  The Backend was created using node Express.'
+         },
+         {
+            title: 'Student Planner Creator',
+            class: 'Artificial Intelligence',
+            year: 'Fall 2019',
+            link:'',
+            onlineRepo: 'https://github.com/JohnCrissman/Student-Plan-Creator',
+            techUsed: ['python'],
+            description:'A program modeling a Constraint Satisfaction Problem (CSP) that intents to provide a student plan for classe, based on the next available semester and the classes already taken by the student.  This uses a Backtracking Algorithm. Runs on console.'
+         },
+         {
+            title: 'Chicago Crime Tracker Map',
+            class: 'Object Oriented Design',
+            year: 'Fall 2019',
+            link:'',
+            onlineRepo: 'https://github.com/JohnCrissman/chicago-crime-tracker-map',
+            techUsed: ['Java', 'JavaFx', 'Google Geo API', 'Javascript'],
+            description:'Campus safety is a concern for all who attend universities and colleges. Students should have a right to see and understand the data that shows crimes near their campus locations. We pulled data from the “Crimes - 2001 to present” dataset on the Chicago Data Portal website, which contains all reported crimes from 2001 to present, excluding the most recent week. Our application, Chicago Crime Tracker, filters this data in a way where we can see what crimes have happened within a given area. With the application a user can enter an address and select a distance in miles to get a filtered list of crimes within the distance of the chosen Chicago address.'
+         },
+         {
+            title: 'A Comparisson: user\'s response vs text book\'s response',
+            class: 'Master\'s Project',
+            year: 'Spring 2020',
+            link:'',
+            onlineRepo: 'https://github.com/marianelamin/vector-modeling-lsa',
+            techUsed: ['python','scikit-learn'],
+            description:'Research that explored LSA technique and generated 18 different term-vectors matrices using combinations between: counting, zero-one, TF-IDF, whether stopwords are removed or not, selection of 100 or 300 dimensions for SVD technique.'
          },
     ];
 
@@ -137,21 +164,21 @@
      },
      {
         title: 'Conference@NEIU May 2018',
-        link:'http://www.hsi-midwest.org',
+        link:'', //http://www.hsi-midwest.org',
         onlineRepo: '',
         techUsed: ['HTML','CSS','Bootstrap'],
         description:'Static page that shows information related to the conference'
      },
      {
         title: 'NEIU Security Group',
-        link:'https://cahsi-midwest.org/',
+        link:'', //https://cahsi-midwest.org/',
         onlineRepo: '',
         techUsed: ['HTML','CSS','Bootstrap'],
         description:'Static page that provides readers with what the NEIU Security group does and has achieved.'
      },
      {
         title: 'NEIU Scholarship Search',
-        link:'https://cahsi-midwest.org/scholarships',
+        link:'', //https://cahsi-midwest.org/scholarships',
         onlineRepo: '',
         techUsed: ['HTML','CSS','JS','PHP','MySQL'],
         description:'A prototype to be implemented at NEIU - El Centro campus, so students have easier access to scholarships.'
@@ -187,7 +214,7 @@
                                  +externalLink+
                               `</div>`
                               +((card.class != undefined && card.year != undefined)? `<h6>${card.class} (${card.year})</h6>`:``) +
-                              `<p class="card-text">${card.description}</p>
+                              `<p class="card-text card-text-description">${card.description}</p>
                               <p class="card-text">Tech used: `
                               +  card.techUsed.reduce((html,item)=>{
                                     return html+ '<span class="tech-used"> '+ item +' </span>';},' ')+
