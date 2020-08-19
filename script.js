@@ -72,59 +72,15 @@ let coursera_class_projects = [
       description: 'A restaurant that we created in Coursera course online.  Some of the information is stored in a mongo database.  We used node js to serve our single page angular application.'
    }
 ];
-let neiu_class_projects = [
+let neiu_class_projects = [   
    {
-      title: 'Bomby Car 2',
-      class: 'Robotics and AI',
-      year: 'Fall 2018',
+      title: 'A Comparisson: user\'s response vs text book\'s response',
+      class: 'Master\'s Project',
+      year: 'Spring 2020',
       link: '',
-      onlineRepo: 'https://github.com/marianelamin/bomby-car2',
-      techUsed: ['python', 'arduino', 'V-rep'],
-      description: 'A python application that connects with the Arduino via sockets and request for distance sensor to modify belief using Bayes Filter Algorithm.'
-   },
-   {
-      title: 'Scholarship Finder',
-      class: 'Design of Databases',
-      year: 'Spring 2019',
-      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/scholarship-finder/login.php',
-      onlineRepo: 'https://github.com/JohnCrissman/scholarship-finder/tree/development',
-      techUsed: ['Bootstrap', 'PHP', 'MySQL'],
-      description: 'Group Final Project that evaluated DB design and implementation of the CRUD operations with the chosen topic.'
-   }, {
-      title: 'CRUD Appetizers',
-      class: 'Design of Databases',
-      year: 'Spring 2019',
-      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/dbhomework/',
-      onlineRepo: 'https://github.com/marianelamin/cs415-crud-appetizers',
-      techUsed: ['Bootstrap', 'PHP', 'MySQL'],
-      description: 'An assignment to demonstrate understanding of CRUD operations using MySQL'
-   },
-   {
-      title: 'FSharp',
-      class: 'Software Engineering',
-      year: 'Spring 2019',
-      link: '',
-      onlineRepo: 'https://github.com/db-mw-software/FSharp/',
-      techUsed: ['Angular', 'nodejs', 'MySQL'],
-      description: 'A web application intended to recommend concerts to the users, depending on their preferences: genre, artists.  This is a work in progress.'
-   },
-   {
-      title: 'Chec Crew',
-      class: 'Web App Development',
-      year: 'Summer 2019',
-      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/index.html',
-      onlineRepo: 'https://github.com/marianelamin/chec-crew-green-fee-tac-app',
-      techUsed: ['Angular', 'Google API', 'nodejs', 'MongoDB'],
-      description: 'A SPA that integrates login authentications, CRUD operations, uses a new javascript framework.  The Backend was created using node Express.'
-   },
-   {
-      title: 'Student Planner Creator',
-      class: 'Artificial Intelligence',
-      year: 'Fall 2019',
-      link: '',
-      onlineRepo: 'https://github.com/JohnCrissman/Student-Plan-Creator',
-      techUsed: ['python'],
-      description: 'A program modeling a Constraint Satisfaction Problem (CSP) that intents to provide a student plan for classe, based on the next available semester and the classes already taken by the student.  This uses a Backtracking Algorithm. Runs on console.'
+      onlineRepo: 'https://github.com/marianelamin/vector-modeling-lsa',
+      techUsed: ['python', 'scikit-learn', 'NLP'],
+      description: 'Research that explored LSA technique and generated 18 different term-vectors matrices using combinations between: counting, zero-one, TF-IDF, whether stopwords are removed or not, selection of 100 or 300 dimensions for SVD technique.'
    },
    {
       title: 'Chicago Crime Tracker Map',
@@ -136,44 +92,88 @@ let neiu_class_projects = [
       description: 'Campus safety is a concern for all who attend universities and colleges. Students should have a right to see and understand the data that shows crimes near their campus locations. We pulled data from the “Crimes - 2001 to present” dataset on the Chicago Data Portal website, which contains all reported crimes from 2001 to present, excluding the most recent week. Our application, Chicago Crime Tracker, filters this data in a way where we can see what crimes have happened within a given area. With the application a user can enter an address and select a distance in miles to get a filtered list of crimes within the distance of the chosen Chicago address.'
    },
    {
-      title: 'A Comparisson: user\'s response vs text book\'s response',
-      class: 'Master\'s Project',
-      year: 'Spring 2020',
+      title: 'Student Planner Creator',
+      class: 'Artificial Intelligence',
+      year: 'Fall 2019',
       link: '',
-      onlineRepo: 'https://github.com/marianelamin/vector-modeling-lsa',
-      techUsed: ['python', 'scikit-learn'],
-      description: 'Research that explored LSA technique and generated 18 different term-vectors matrices using combinations between: counting, zero-one, TF-IDF, whether stopwords are removed or not, selection of 100 or 300 dimensions for SVD technique.'
+      onlineRepo: 'https://github.com/JohnCrissman/Student-Plan-Creator',
+      techUsed: ['python', 'Backtracking Algorithm'],
+      description: 'A program modeling a Constraint Satisfaction Problem (CSP) that intents to provide a student plan for classe, based on the next available semester and the classes already taken by the student.  This uses a Backtracking Algorithm. Runs on console.'
    },
+   {
+      title: 'Chec Crew',
+      class: 'Web App Development',
+      year: 'Summer 2019',
+      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/index.html',
+      onlineRepo: 'https://github.com/marianelamin/chec-crew-green-fee-tac-app',
+      techUsed: ['Angular', 'Google API', 'nodejs', 'MongoDB', 'REST API', 'web services'],
+      description: 'A SPA that integrates login authentication with Google APIs, CRUD operations, uses a new javascript framework.  The Backend was created using node Express.'
+   },
+   {
+      title: 'FSharp',
+      class: 'Software Engineering',
+      year: 'Spring 2019',
+      link: '',
+      onlineRepo: 'https://github.com/db-mw-software/FSharp/',
+      techUsed: ['Angular', 'nodejs', 'MySQL'],
+      description: 'A web application intended to recommend concerts to the users, depending on their preferences: genre, artists.  This is a work in progress.'
+   },
+   {
+      title: 'Scholarship Finder',
+      class: 'Design of Databases',
+      year: 'Spring 2019',
+      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/scholarship-finder/login.php',
+      onlineRepo: 'https://github.com/JohnCrissman/scholarship-finder/tree/development',
+      techUsed: ['Bootstrap', 'PHP', 'MySQL'],
+      description: 'Group Final Project that evaluated DB design and implementation of the CRUD operations with the chosen topic.'
+   },
+   {
+      title: 'CRUD Appetizers',
+      class: 'Design of Databases',
+      year: 'Spring 2019',
+      link: 'http://cs.neiu.edu/~db_spr19_mmendozamend/dbhomework/',
+      onlineRepo: 'https://github.com/marianelamin/cs415-crud-appetizers',
+      techUsed: ['Bootstrap', 'PHP', 'MySQL'],
+      description: 'An assignment to demonstrate understanding of CRUD operations using MySQL'
+   },
+   {
+      title: 'Bomby Car 2',
+      class: 'Robotics and AI',
+      year: 'Fall 2018',
+      link: '',
+      onlineRepo: 'https://github.com/marianelamin/bomby-car2',
+      techUsed: ['python', 'arduino', 'V-rep'],
+      description: 'A python application that connects with the Arduino via sockets and request for distance sensor to modify belief using Bayes Filter Algorithm.'
+   }
 ];
 
 
 let work_projects = [
    {
-      title: 'Cafe El Tapatio',
-      class: "",
-      year: "March 2017",
-      link: 'http://www.cafetapatio.com',
+      title: 'Student Advising and Management System',
+      class: "Graduate Assistantship",
+      year: "May 2020",
+      link: 'https://www.loom.com/share/a7767d1fa0334688bf2f607dc1bb23ab',
       onlineRepo: '',
-      techUsed: ['HTML', 'CSS', 'PHP'],
-      description: 'Developed a business website, featuring the story about the business, menues and an embedded contact form.'
+      techUsed: ['Angular', 'NodeJS', 'MySQL', 'Google APIs'],
+      description: 'Designed and developed a web application for the CS Department at NEIU, the purpose is to manage 300+ students and help with the advising process.'
    },
    {
-      title: 'Chess Animals',
+      title: 'Proyecto de Amor',
       class: "",
-      year: "May 2017",
-      link: 'http://www.chessanimals.com',
-      onlineRepo: '',
-      techUsed: ['HTML', 'CSS', 'Bootstrap'],
-      description: 'Business webpage that advertise Chess Classes and provides clients with more inforamtion'
-   },
-   {
-      title: 'NEIU Security Group',
+      year: "Dec 2019",
+      link: '', //'https://pda.org.ve/',
+      onlineRepo: 'https://bitbucket.org/marianela_min/proyectodeamor/src/master/',
+      techUsed: ['JS', 'PHP', 'MySQL', 'Wordpress'],
+      description: 'A portal so 700+ catholic members of the organization can meet, read the lastest posts and register for events.'
+   },   {
+      title: 'NEIU Scholarship Search',
       class: "",
-      year: "Jan 2018",
-      link: '', //https://cahsi-midwest.org/',
+      year: "Sep 2018",
+      link: '', //https://cahsi-midwest.org/scholarships',
       onlineRepo: '',
-      techUsed: ['HTML', 'CSS', 'Bootstrap'],
-      description: 'Static page that provides readers with what the NEIU Security group does and has achieved.'
+      techUsed: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+      description: 'A prototype to be implemented at NEIU - El Centro campus, so students have easier access to scholarships.'
    },
    {
       title: 'STEM Conference @ NEIU',
@@ -185,31 +185,31 @@ let work_projects = [
       description: 'Static page that shows information related to the conference'
    },
    {
-      title: 'NEIU Scholarship Search',
+      title: 'NEIU Security Group',
       class: "",
-      year: "Sep 2018",
-      link: '', //https://cahsi-midwest.org/scholarships',
+      year: "Jan 2018",
+      link: '', //https://cahsi-midwest.org/',
       onlineRepo: '',
-      techUsed: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
-      description: 'A prototype to be implemented at NEIU - El Centro campus, so students have easier access to scholarships.'
+      techUsed: ['HTML', 'CSS', 'Bootstrap'],
+      description: 'Static page that provides readers with what the NEIU Security group does and has achieved.'
    },
    {
-      title: 'Proyecto de Amor',
+      title: 'Chess Animals',
       class: "",
-      year: "Dec 2019",
-      link: 'https://pda.org.ve/',
+      year: "May 2017",
+      link: 'http://www.chessanimals.com',
       onlineRepo: '',
-      techUsed: ['JS', 'PHP', 'MySQL', 'Wordpress'],
-      description: 'A portal so 700+ catholic members of the organization can meet, read the lastest posts and register for events.'
+      techUsed: ['HTML', 'CSS', 'Bootstrap'],
+      description: 'Business webpage that advertise Chess Classes and provides clients with more inforamtion'
    },
    {
-      title: 'Student Advising and Management System',
-      class: "Graduate Assistantship",
-      year: "May 2020",
-      link: 'https://www.loom.com/share/a7767d1fa0334688bf2f607dc1bb23ab',
-      onlineRepo: '',
-      techUsed: ['Angular', 'NodeJS', 'MySQL', 'Google APIs'],
-      description: 'Designed and developed a web application for the CS Department at NEIU, the purpose is to manage 300+ students and help with the advising process.'
+      title: 'Cafe El Tapatio',
+      class: "",
+      year: "March 2017",
+      link: '', //'http://www.cafetapatio.com',
+      onlineRepo: 'https://bitbucket.org/marianela_min/cafeeltapatio/src/master/',
+      techUsed: ['HTML', 'CSS', 'PHP'],
+      description: 'Developed a business website, featuring the story about the business, menues and an embedded contact form.'
    }
 ];
 
