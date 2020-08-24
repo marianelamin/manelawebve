@@ -179,7 +179,7 @@ let work_projects = [
       title: 'STEM Conference @ NEIU',
       class: "",
       year: "May 2018",
-      link: '', //http://www.hsi-midwest.org',
+      link: 'https://marianelacrissman.com/demo/demo-hsi-2018', //http://www.hsi-midwest.org',
       onlineRepo: 'https://bitbucket.org/marianela_min/conference_hsi_midwest/src/master/',
       techUsed: ['HTML', 'CSS', 'Bootstrap'],
       description: 'Static page that shows information related to the conference'
