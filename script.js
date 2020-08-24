@@ -180,7 +180,7 @@ let work_projects = [
       class: "",
       year: "May 2018",
       link: '', //http://www.hsi-midwest.org',
-      onlineRepo: '',
+      onlineRepo: 'https://bitbucket.org/marianela_min/conference_hsi_midwest/src/master/',
       techUsed: ['HTML', 'CSS', 'Bootstrap'],
       description: 'Static page that shows information related to the conference'
    },
