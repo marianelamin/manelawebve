@@ -150,6 +150,15 @@ let neiu_class_projects = [
 
 let work_projects = [
    {
+      title: 'Monitor Ciudad Dashboard',
+      class: "Code For Venezuela (C4V)",
+      year: "In progress, 2020",
+      link: 'https://datastudio.google.com/s/iqlVxRb2I6c',
+      onlineRepo: 'https://gitlab.com/codeforvenezuela/angostura/airflow-jobs/-/blob/master/dags/bq_sql/monitor_ciudad_agua.sql',
+      techUsed: ['SQL', 'BigQuery', 'DataStudio', 'GitLab'],
+      description: 'Collaborating with the Monitor Ciudad Team in cleaning and structuring data, normalizing and analyzing results to make them available for visualizations via Google Data Studio.'
+   },
+   {
       title: 'Student Advising and Management System',
       class: "Graduate Assistantship",
       year: "May 2020",
@@ -216,13 +225,25 @@ let work_projects = [
 
 
 // creating the templates
+const select_repo_icon = (url) => {
+
+   if (url.includes('bitbucket')){
+      return `<i class="fab fab fa-bitbucket"></i>`;
+   }
+   if (url.includes('github')){
+      return `<i class="fab fab fa-github"></i>`;
+   }
+   if (url.includes('gitlab')){
+      return `<i class="fab fab fa-gitlab"></i>`;
+   }
+}
 
 const projectCard = (card) => {
    let html_string;
    let anchor_add = '';
    let externalLink = '';
    if (card.onlineRepo != "") {
-      anchor_add = `<a href="${card.onlineRepo}" class="btn btn-black" target="_blank"><span><i class="fab fab fa-${(card.onlineRepo.includes('bitbucket')) ? 'bitbucket' : 'github'}"></i></span></a>`;
+      anchor_add = `<a href="${card.onlineRepo}" class="btn btn-black" target="_blank"><span>${select_repo_icon(card.onlineRepo)}</span></a>`;
    }
    if (card.link != "") {
       externalLink = `<h5><a title="follow the link" href="${card.link}" class="card-link " target="_blank">Live <i class="fas fa-external-link-square-alt"></i></a></h5>`;
